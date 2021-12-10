@@ -29,8 +29,8 @@ img{
 body{
     width:100vw;
     min-height:100vh;
-    background:#121212;
-    overflow-y: hidden;
+    /* background:#121212; */
+    /* overflow-y: hidden; */
 }
 
 .header__logo{
@@ -38,14 +38,24 @@ body{
     z-index: 5;
     margin:40px 0 0 80px;
 }
-.right__side{
+.page{
+    width:100vw;
+    height: 100vh; 
+    overflow: hidden;
+}
+.page__first{
+    background:#121212;
+}
+
+/* .right__side{
     height:100vh;
     width:100vw;
-}
+} */
 .photo{
     width: 1173px;
     height: 1080px;
     position: relative;
+    left: 0;
     float: right;
     background-image: url("../media/programm.jpg") ;
     background-repeat: no-repeat;
@@ -74,7 +84,8 @@ body{
 
     /* max-width:400px; */
 
-    padding: 391px 0 0 360px;
+    padding: 36.203703703vh 0 0 18.75vw;
+    /* padding: 391px 0 0 360px; */
 }
 
 .left__side article .large p{
@@ -109,7 +120,7 @@ body{
 
     text-align: center;
 
-    margin:46px 0 0 0;
+    margin:32px 0 0 0;
 }
 .left__side .btn p{
     font-family: R_m;
@@ -121,4 +132,228 @@ body{
     color: #000000;
 
 
+}
+
+.bottom__side{
+    position: absolute;
+    bottom: 40px;
+    margin:0 50%;
+}
+
+
+.border__arrow{
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+.arrow{
+    width: 16px;
+    height: 11px;
+    background-image: url('../media/arrow_down.png');
+
+    margin: 16.5px auto;
+
+    animation: arrow__fade 1.5s infinite;
+}
+
+@keyframes arrow__fade {
+    0%{
+        margin: 16.5px auto;
+    }
+
+
+    50%{
+        margin: 23px auto;
+    }
+
+    100%{
+        margin: 16.5px auto;
+    }
+}
+
+
+
+.page__second{
+    background:#0B0B0B;
+}
+
+.page__second header{
+    width:100vw;
+    height:64px;
+    background:#151515;
+}
+
+.page__second nav{
+    width:1200px;
+    height:inherit;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+
+.nav__right{
+    
+}
+
+.information__page ,.burger__menu{
+    float: left;
+    
+}
+
+.information__page{
+    display: flex;
+    margin:0 24px 0 0;
+}
+
+.number__inf{
+
+    font-family: R_l;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    transform: rotate(-90deg);
+    /* padding: 0 5px 0 0; */
+}
+.dash{
+    display: inline-block;
+    width:1px;
+    height: 10px;
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    margin:6px 0 0 0;
+}
+
+.dash__large__title{
+    width: 64px;
+    height: 0px;
+
+    margin: 24px 0;
+
+    border: 2px solid rgba(255, 255, 255, 0.27);
+}
+
+.dash__large__text__number{
+    width: 0px;
+    height: 64px;
+    border: 1px solid #FFFFFF27;
+}
+.text__inf{
+
+    font-family: R_r;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    margin: 2px 0 0 12px;
+}
+
+.burger__menu{
+
+    margin:5px 0;
+    height:14px;
+    width:27px;
+
+
+}
+
+.line__burger{
+    height: 2px;
+
+    background: #FFFFFF;
+    border-radius: 4px;
+    display: block;
+}
+
+
+.l__t{
+    width: 14px;
+}
+
+.l__m{
+    width: 18px;
+    margin:4px 0 4px 9px;
+}
+
+.l__b{
+    width: 18px;
+}
+.content__second{
+    width:1200px;
+    margin: 0 auto;
+}
+.left__content{
+    max-width: 425px;
+    margin:120px 0 0 0;
+}
+
+.left__content__title p{
+
+    font-family: R_m;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 56px;
+
+    color: #FFFFFF;
+
+
+}
+
+.left__content__text p{
+
+    font-family: R_l;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 135%;
+
+    color: #FFFFFF;
+
+    text-align: justify;
+}
+
+.left__content,.right__content{
+    float: left;
+}
+
+.right__content{
+    margin:176px 0 0 185px;
+    max-width: 400px;
+}
+
+.right__content_title{
+    font-family: R_m;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+
+    color: #FFFFFF;
+}
+.r__c__t > .num,.r__c__t > .text{
+    float: left;
+}
+.r__c__t > .num p{
+
+    font-family: R_m;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #FFFFFF27;
+    transform: rotate(-90deg);
 }
